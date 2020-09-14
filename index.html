@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font/font.css" />
+  </head>
+  <body>
+    <!-- TopNav Code Start-->
+    <header>
+      <div class="navbar">
+        <i class="nav-menu-icon material-icons">menu</i>
+        <h3 class="site-name">Wallpaper Admin</h3>
+      </div>
+    </header>
+    <!-- TopNav Code End-->
+
+    <!-- SideNav Code Start-->
+    <div class="sidenav">
+      <div class="sidenav-top">
+        <li>
+          <a href="#"><i class="menu-icon material-icons">close</i></a>
+        </li>
+        <li>Close</li>
+      </div>
+      <div class="sidenav-welcome">
+        <span>Welcome Chief</span>
+      </div>
+      <ul class="sidenav-menu">
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+    <!-- SideNav Code End-->
+
+    <!-- Main Content Area Start -->
+    <div class="content-area">
+      <!-- Login Section Start -->
+      <section class="section">
+        <div class="login-signup-form-container">
+          <form id="login-form" class="login-singup-form">
+            <div class="form-header">
+              <h2>Login</h2>
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Email" id="email" />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                id="password"
+              />
+            </div>
+            <div>
+              <input type="submit" name="submit" value="Login" />
+              <div class="error"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Login Section End -->
+
+      <!-- Add Category Form Section Start -->
+      <section class="section">
+        <form id="add-category" class="form add-form">
+          <div class="form-header">
+            <h2>Add Category</h2>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Category Name"
+              id="category-name"
+            />
+          </div>
+          <div>
+            <label>
+              <div class="custom-file-chooser">Choose Image</div>
+              <input
+                style="display: none"
+                type="file"
+                name="image"
+                id="category-image"
+                accept="image/*"
+              />
+            </label>
+          </div>
+          <div>
+            <input type="submit" name="submit" value="Add" />
+            <div class="error"></div>
+          </div>
+        </form>
+      </section>
+      <!-- Add Ctegory Form Section End -->
+      <!--Add Product Form Start-->
+      <section class="section">
+        <form id="add-product" class="form add-form">
+          <div class="form-header">
+            <h2>Add Product</h2>
+          </div>
+          <div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Product Name"
+              id="product-name"
+            />
+          </div>
+          <div class="select-dropdown">
+            <label
+              >Choose a Category:
+              <select name="cars" id="cars">
+                <option value="volvo">Digital</option>
+                <option value="volvo">Electronic</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label>
+              <div class="custom-file-chooser">Choose Image</div>
+              <input
+                style="display: none"
+                type="file"
+                name="image"
+                id="product-image"
+                accept="image/*"
+              />
+            </label>
+          </div>
+          <div>
+            <input type="submit" name="submit" value="Add" />
+            <div class="error"></div>
+          </div>
+        </form>
+      </section>
+      <!--Add Product Form End-->
+
+      <!--Product List Start -->
+      <section class="section">
+        <div class="list-table-container">
+          <table class="list-table">
+            <tr>
+              <th>SN</th>
+              <th max-width="200">Category</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <div class="text-limit">
+                  Hollywoood Hollywoood Hollywoood Hollywoood Hollywoood
+                </div>
+              </td>
+              <td class="nowrap"><a class="view-button" href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <div class="text-limit">
+                  Hollywoood Hollywoood Hollywoood Hollywoood Hollywoood
+                </div>
+              </td>
+              <td class="nowrap"><a class="view-button" href="#">View</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <div class="text-limit">
+                  Hollywoood Hollywoood Hollywoood Hollywoood Hollywoood
+                </div>
+              </td>
+              <td class="nowrap"><a class="view-button" href="#">View</a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="button-container">
+          <button id="previous-button" class="previous-button">Previous</button>
+          <button id="next-button" class="next-button">Next</button>
+        </div>
+      </section>
+      <!--Product List Start-->
+    </div>
+    <footer>
+      <span>Created By Ahadul</span>
+    </footer>
+    <!-- Main Content Area End -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

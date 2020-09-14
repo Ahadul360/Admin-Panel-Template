@@ -1,0 +1,445 @@
+:root {
+  --font-family: sans-serif;
+
+  --primary-color: rgb(94 83 187);
+  --secoundary-color: rgb(102 88 218 / 89%);
+  --border-color: rgb(148 148 148 / 66%);
+  --hover-color: rgb(82 72 169);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content-area {
+  padding-top: 70px;
+  margin-left: 300px;
+  transition: all 0.5s;
+  padding-bottom: 40px;
+}
+section {
+  padding: 10px;
+}
+
+footer {
+  margin-left: 300px;
+  transition: all 0.5s;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  position: fixed;
+  width: 85%;
+  bottom: 0;
+}
+
+/* Navbar And SideNav CSS Start */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  margin-left: 300px;
+  padding-left: 10px;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 8;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-menu-icon {
+  color: white;
+  font-size: 35px !important;
+  padding: 5px;
+  display: none !important;
+}
+.site-name {
+  color: white;
+  padding-left: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.sidenav {
+  position: fixed;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: var(--primary-color);
+  z-index: 9 !important;
+  transition: all 0.5s;
+}
+
+.sidenav-top {
+  height: 70px;
+  padding-left: 10px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  display: flex !important;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  display: none !important;
+}
+.sidenav-welcome {
+  height: 70px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.5rem;
+  color: #1eff1e;
+  font-weight: 500;
+  text-align: center;
+  line-height: 70px;
+  cursor: pointer;
+}
+.sidenav-welcome span {
+  color: yellow;
+}
+.sidenav-top li {
+  color: white;
+  font-size: 1.3rem;
+}
+.sidenav-top li a i {
+  font-size: 14px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin-right: 4px;
+}
+.sidenav-menu li {
+  height: 50px;
+  line-height: 50px;
+  list-style: none;
+  padding-left: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+.sidenav-menu li:hover {
+  background-color: var(--hover-color);
+}
+.sidenav-menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Navbar And SideNav CSS End*/
+
+/* Body Css Start */
+/* Form CSS Start */
+.login-signup-form-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#login-form {
+  padding: 30px 30px 40px 30px;
+  background-color: var(--secoundary-color);
+  height: 350px;
+  width: 320px;
+}
+.form-header {
+  text-align: center;
+  padding: 10px 0px;
+  color: white;
+}
+
+.add-form {
+  width: 600px;
+  margin: 0 auto;
+  background-color: var(--secoundary-color);
+  height: 300px;
+  padding: 20px 15px;
+}
+#add-product {
+  height: 380px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  resize: vertical;
+  font-size: 16px;
+  margin-top: 8px;
+}
+input[type="file"] {
+  width: 100%;
+  resize: vertical;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.select-dropdown {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+select {
+  width: 300px;
+  font-size: 17px;
+}
+select:focus {
+  outline: none;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 12px;
+  font-size: 17px;
+  margin-top: 8px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input[type="password"]:focus {
+  outline: none;
+}
+input[type="email"]:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+input[type="file"]:focus {
+  outline: none;
+}
+.custom-file-chooser {
+  padding: 12px 0px;
+  background: var(--primary-color);
+  margin: 20px 0px 10px 0px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.custom-file-chooser:hover {
+  background-color: var(--hover-color);
+  transition: all 0.2s;
+}
+input[type="submit"] {
+  background-color: var(--primary-color);
+  font-size: 18px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-top: 8px;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--hover-color);
+  transition: all 0.2s;
+}
+input[type="submit"]:focus {
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+/* Form CSS End */
+
+/* Table Css Start */
+table {
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid var(--border-color);
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid var(--border-color);
+  color: white;
+  padding: 8px;
+}
+th {
+  color: white;
+  background-color: var(--primary-color);
+}
+tr:nth-child(odd) {
+  background: var(--primary-color);
+}
+tr:nth-child(even) {
+  background: var(--secoundary-color);
+}
+.listTable {
+  width: 100%;
+}
+.button-container {
+  padding: 10px;
+  text-align: center;
+}
+button:hover {
+  background-color: var(--hover-color);
+  transition: all 0.2s;
+}
+button:focus {
+  outline: none;
+}
+.previous-button {
+  font-size: 14px;
+  padding: 8px 40px;
+  width: 120px;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  margin: 4px;
+}
+.next-button {
+  font-size: 14px;
+  padding: 8px 40px;
+  width: 120px;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50px;
+  margin: 4px;
+}
+
+.text-limit {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 400px;
+  text-overflow: ellipsis;
+}
+.nowrap {
+  white-space: nowrap;
+  text-align: center;
+}
+.view-button {
+  font-size: 18px;
+  color: rgb(255 214 92);
+}
+.view-button:hover {
+  color: var(--hover-color);
+  transition: all 0.2s;
+}
+.edit-button {
+  font-size: 14px;
+  padding: 8px 20px;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-button-bg);
+  border: none;
+  border-radius: 50px;
+}
+.delete-button {
+  font-size: 14px;
+  padding: 8px 20px;
+  color: var(--secondary-text-color);
+  background-color: var(--delete-button-bg);
+  border: none;
+  border-radius: 50px;
+}
+/* Table Css End */
+/* Body Css End */
+
+/* Responsive Code */
+@media only screen and (max-width: 992px) {
+  section {
+    padding: 5px;
+  }
+  .navbar {
+    margin-left: 0px;
+  }
+  .nav-menu-icon {
+    display: block !important;
+  }
+  .site-name {
+    color: white;
+    width: 95%;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .sidenav-top {
+    display: block !important;
+    display: flex !important;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    position: sticky;
+    background: var(--primary-color);
+    top: 0;
+    justify-content: center;
+  }
+  .sidenav {
+    left: -300px;
+    border-right: 2px solid var(--border-color) !important;
+  }
+  .active {
+    left: 0px !important;
+  }
+  .content-area {
+    margin-left: 0px !important;
+  }
+
+  .add-form {
+    width: 60%;
+  }
+  select {
+    width: 100% !important;
+  }
+  .text-limit {
+    width: 300px;
+  }
+  footer {
+    margin-left: 0px;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .add-form {
+    width: 80%;
+  }
+  .text-limit {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #login-form {
+    width: 100%;
+  }
+  .add-form {
+    width: 95%;
+  }
+  .text-limit {
+    width: 160px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .sidenav {
+    width: 100% !important;
+  }
+}
