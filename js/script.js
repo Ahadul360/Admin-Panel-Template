@@ -1,4 +1,4 @@
-const menu = document.querySelector(".nav-menu-icon");
+const menu = document.querySelector(".toggle-button");
 const sideNav = document.querySelector(".sidenav");
 const sideNavTop = document.querySelector(".sidenav-top");
 

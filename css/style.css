@@ -69,13 +69,23 @@ footer {
   flex-direction: row;
   align-items: center;
 }
-
-.nav-menu-icon {
-  color: white;
-  font-size: 35px !important;
-  padding: 5px;
-  display: none !important;
+.menu-container {
+  display: none;
 }
+.toggle-button {
+  height: 24px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+}
+
 .site-name {
   color: white;
   padding-left: 20px;
@@ -121,11 +131,12 @@ footer {
   color: white;
   font-size: 1.3rem;
 }
-.sidenav-top li a i {
-  font-size: 14px;
+.sidenav-top li a {
+  font-size: 17px;
   color: white;
   border: 2px solid white;
-  border-radius: 50px;
+  border-radius: 50%;
+  padding: 2px 5px 1px 5px;
   margin-right: 4px;
 }
 .sidenav-menu li {
@@ -372,7 +383,7 @@ button:focus {
   .navbar {
     margin-left: 0px;
   }
-  .nav-menu-icon {
+  .menu-container {
     display: block !important;
   }
   .site-name {
