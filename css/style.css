@@ -407,9 +407,21 @@ button:focus {
     left: -300px;
     border-right: 2px solid var(--border-color) !important;
   }
-  .active {
+  .sidenav.active {
     left: 0px !important;
   }
+  .content-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 8;
+    background: rgb(13 11 27 / 73%);
+    display: none;
+  }
+  .content-overlay.active {
+    display: block;
+  }
+
   .content-area {
     margin-left: 0px !important;
   }
